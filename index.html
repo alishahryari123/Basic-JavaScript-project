@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"> 
+<head>
+    <title>Sphere - Bootstrap 5 Portfolio/Resume/CV Template</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/plugins/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+</head> 
+
+<body>
+    
+    <header class="header">
+        <div class="top-bar container-fluid">
+            <div class="actions">
+                <a class="btn d-none d-md-inline-block" href="mailto:someone@example.com"><i class="fas fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
+                <a class="btn" href="#"><i class="fas fa-download" aria-hidden="true"></i> Download My Resume</a>
+            </div><!--//actions-->
+            <ul class="social list-inline">
+                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+            </ul><!--//social-->
+        </div><!--//top-bar-->
+        
+        <div class="intro">
+            <div class="container text-center">
+                <img class="profile-image" src="data:image/jpeg;base64,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" alt="alt">
+                <h1 class="name">biutiful website</h1>
+                <div class="title">University lecturer - front end programmer</div>
+                <div class="profile">
+                    <p>Dr. Ali Mohammad Yaz, great programmers in the field of website design, who have been able to achieve great honors for
+                    our dear country in the international market, which is the reason for the greatness of a nation.</p>
+                </div><!--//profile-->
+            </div><!--//container-->
+        </div><!--//intro-->
+        
+        <div class="contact-info">
+            <div class="container text-center">
+                <ul class="list-inline">
+                    <li class="email list-inline-item"><i class="fas fa-envelope mr-2"></i><a href="ghasemali133@gmail.com">ghasemali133@gmail.com</a></li>
+                    <li class="list-inline-item"><i class="fas fa-mobile-alt mr-2"></i><a href="#">09023029071 </a></li>
+                    <li class="website list-inline-item"><i class="fas fa-globe mr-2"></i><a href="#" target="_blank">ginbar</a></li>
+                </ul>
+            </div><!--//container-->
+        </div><!--//contact-info-->
+        
+        <div id="page-nav-space-holder" class="page-nav-space-holder d-none d-md-block">
+            <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+                <div class="container">
+                    <ul id="page-nav" class="nav page-nav list-inline">
+                        <li class="nav-item"><a class="scrollto nav-link" href="#experiences-section">Experiences</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#education-section">Education</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#skills-section">Skills</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#testimonials-section">Testimonials</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#portfolio-section">Portfolio</a></li>
+                        <li class="nav-item"><a class="scrollto nav-link" href="#contact-section">Contact</a></li>
+                    </ul><!--//page-nav-->
+                </div>
+            </div><!--//page-nav-wrapper-->
+        </div>
+        
+    </header><!--//header-->
+    
+    <div class="wrapper container">
+        <section id="experiences-section" class="experiences-section section">
+            <h2 class="section-title">Work Experiences</h2>
+            <div class="timeline">
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Google</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>Mountain View</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Senior Software Engineer</div>
+                        <div class="time">2022 - 2023</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>In order to express the words clearly so that the other party has a correct understanding of it, very simple sentences
+                        can be made by saying simple words to fully express the meaning so that there is no more room for explanation.</p> 
+                        <ul >
+                            <li ">Lorem ipsum dolor sit amet</li>
+                            <li ">Donec pede justo ante</li>
+                            <li ">Maecenas tempus tellus eget </li>
+                        </ul>
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Apple</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>New York</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Lead Software Engineer</div>
+                        <div class="time">2020 - 2022</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Life is an aspect of existence that includes processes, actions, reactions including reproduction and metabolism. The
+                        important difference between life and death is that life must consume energy for its physical and conscious growth. Life
+                        is something that grows and eventually dies, which means it stops reproducing and becoming conscious. For example, can
+                        we say that viruses are known? Yes, as far as they react to stimuli; But they are basically alive because they multiply
+                        and grow. Computers are not alive because even if they can understand, they do not develop biologically and do not
+                        reproduce. It is not cognition that determines life: then death prevents reproduction and evolution; Death is only for
+                        living beings.
+                        
+                        Community Verified icon</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Twitter</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>London</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Software Engineer</div>
+                        <div class="time">2019 - 2020</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>Anatomy of the human body is one of the basic sciences in the study of the morphology of the human body. Anatomy is
+                        divided into three parts: macroscopic anatomy, microscopic anatomy (histology) and developmental anatomy. Macroscopic
+                        anatomy (also called topographic anatomy, rudimentary anatomy, anthropotomy, or gross anatomy. It is the study of
+                        anatomical structure with the naked eye. Microscopic anatomy includes the study of anatomical structures by means of a
+                        microscope; and the field of histology is the study of the structure of tissues at all levels of cell biology ( In the
+                        past it was called cytology or cellology) to organs.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+                <div class="item">
+                    <div class="work-place">
+                        <h3 class="place">Startup Hub</h3>
+                        <div class="location"><i class="fas fa-map-marker-alt mr-1"></i>London</div>
+                    </div>
+                    <div class="job-meta">
+                        <div class="title">Founder &amp; Lead Developer</div>
+                        <div class="time">2017 - 2019</div>
+                    </div><!--//job-meta-->
+                    <div class="job-desc">
+                        <p>All humans wake up in the morning and then get ready for work and daily activities, then they return to their resting
+                        place after doing daily tasks and sleep again and eat several times and go to the toilet and take a bath; We all repeat
+                        these things every day. These things are repeated in most societies and cultures. Maybe at first glance, there is no
+                        need to think about these clichéd works in order to pursue philosophies and theorizing, but the reality is that behind
+                        all these behaviors of ours are complex social and cultural relationships and, as Georg Simmel said, the most mundane
+                        events Our lives are also affected by social relationships.</p> 
+                    </div><!--//job-desc-->
+                </div><!--//item-->
+                
+            </div><!--//timeline-->
+            
+        </section><!--//section-->
+        
+        <section id="education-section" class="education-section section">
+            <h2 class="section-title">Education</h2>
+            <div class="row">
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">MSc Computer Science</h3>
+                        <div class="education-body">
+                            University College of London
+                        </div><!--//education-body-->
+                        <div class="time">2016 - 2017</div>
+                        <div class="desc">
+                    The book "Culture and Everyday Life" has a relatively simple structure. According to the author of the book, his goal in
+                    writing the book is to find a set of interconnected methods to get to the depth of sometimes problematic issues that
+                    arise when thinking about how cultural phenomena work in specific contexts of everyday life.
+
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">MSc Applied Mathematics</h3>
+                        <div class="education-body">
+                            University of Bristol
+                        </div><!--//education-body-->
+                        <div class="time">2015 - 2016</div>
+                        <div class="desc">
+In the fourth chapter, the forces related to globalization have been considered as factors affecting our daily life and
+the author has shown how global culture has changed the cultural context of our daily life. He shows that culture has
+become globalized in the current era, just like economy and politics, and countries and nations are both influenced by
+each other and have an effect on each other.
+
+Community Verified icon
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-12 col-md-4">
+                    <div class="item-inner">
+                        <h3 class="degree">BSc Creative Technology</h3>
+                        <div class="education-body">
+                            University of Bristol
+                        </div><!--//education-body-->
+                        <div class="time">2011 - 2015</div>
+                        <div class="desc">
+                    Finally, in the concluding part of the book, solutions are proposed that can help those interested in the field of daily
+                    life studies in designing research on this matter. In his book, he shows how the study of everyday life can provide many
+                    points about certain societies and how certain aspects of them work for those interested in sociological issues.
+
+                        </div>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+            </div><!--//row-->
+        </section><!--//section-->
+        
+        
+        <section id="skills-section" class="skills-section section text-center">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="top-skills">
+                <h3 class="subtitle">Top Skills</h3>
+                <div class="row">
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <div class="chart-easy-pie text-center">
+                                <div class="chart-theme-1 chart" data-percent="98"><span>98</span>%</div>
+                            </div>
+                            <h4 class="skill-name">Python &amp; Django</h4>
+                            <div class="level">Expert, 8 years</div>
+                            <div class="desc">
+Sociology plays an informative role in everyday life and can make this science more fruitful and in addition, it can enrich theories and general ideas with a lot of details and specific examples.
+
+The book "Culture and Everyday Life" written by David Inglis with fluent translation by "Nazanin Mirzabigi" has been published by Goman Publishing House in 281 pages.
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <div class="chart-easy-pie text-center">
+                                <div class="chart-theme-1 chart" data-percent="90"><span>90</span>%</div>
+                            </div>
+                            <h4 class="skill-name">JavaScript</h4>
+                            <div class="level">Expert, 8 years</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                    <div class="item col-12 col-md-4">
+                        <div class="item-inner">
+                            <div class="chart-easy-pie text-center">
+                                <div class="chart-theme-1 chart" data-percent="85"><span>85</span>%</div>
+                            </div>
+                            <h4 class="skill-name">React &amp; Angular</h4>
+                            <div class="level">Advanced, 4 years</div>
+                            <div class="desc">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient 
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
+                </div><!--//row-->
+            </div><!--//top-skills-->
+            
+            <div class="other-skills">
+                <h3 class="subtitle">Other Skills</h3>
+                <div class="misc-skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">SASS</span>
+                    <span class="skill-tag">LESS</span>
+                    <span class="skill-tag">Git</span>
+                    <br>
+                    <span class="skill-tag">Ruby</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Wireframe</span>
+                    <span class="skill-tag">Spanish</span>
+                    <span class="skill-tag">French</span>
+                </div>
+            </div><!--//other-skills-->
+            
+        </section><!--//skills-section-->
+        
+        <section id="testimonials-section" class="testimonials-section section">
+            <h2 class="section-title">Testimonials</h2>
+            
+            <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-bs-interval="8000">
+                
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#testimonials-carousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#testimonials-carousel" data-bs-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <blockquote class="quote">      
+                            <p><span class="icon-holder"><i class="fas fa-quote-left"></i></span>                            
+                            James is an excellent software engineer and he is passionate about what he does. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse porttitor metus eros.</p>
+                        </blockquote>    
+                        <div class="source">
+                            <div class="name">Rob Olson</div>
+                            <div class="position">Product Manager, Apple</div>
+                        </div><!--//source-->   
+                                                       
+                    </div><!--//item-->
+                    <div class="item carousel-item">
+                        <blockquote class="quote">
+                            <p><span class="icon-holder"><i class="fas fa-quote-left"></i></span> 
+                            Sed massa leo, aliquet non velit eu, volutpat vulputate odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse porttitor metus eros, ut fringilla nulla auctor a.</p>
+                            
+                        </blockquote>
+                        <div class="source">
+                            <div class="name">Christina Jensen</div>
+                            <div class="position">Senior Developer, Twitter</div>
+                        </div><!--//source-->   
+               
+                    </div><!--//item-->
+                    <div class="item carousel-item">
+                        <blockquote class="quote">
+                            <p><span class="icon-holder"><i class="fas fa-quote-left"></i></span> 
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                        </blockquote>       
+                        <div class="source">
+                            <div class="name">Austin Ward</div>
+                            <div class="position">CEO, Startup Hub</div>
+                        </div><!--//source-->          
+                    </div><!--//item-->
+                    
+                </div><!--//carousel-inner-->
+            </div><!--//testimonials-carousel-->
+            
+        </section><!--//section-->
+        
+        
+        <section id="portfolio-section" class="portfolio-section section">
+            <h2 class="section-title">Portfolio</h2>
+            <ul id="filters" class="filters clearfix">
+                <li class="type active" data-filter="*">All</li>
+                <li class="type" data-filter=".backend">Back-end</li>
+                <li class="type" data-filter=".frontend">Front-end</li>
+            </ul><!--//filters-->
+            <div class="items-wrapper isotope row">
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-1.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">AngularJS </div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-2.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">Django</div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-3.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">Django/JavaScript</div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-4.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">ReactJS</div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-5.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">Python</div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-6.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">JavaScript</div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item frontend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-7.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">HTML/AngularJS </div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+                <div class="item frontend backend col-lg-3 col-6">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-fluid" src="assets/images/portfolio/portfolio-8.jpg" alt="" />
+                        </figure>
+                        <div class="content text-start">
+                            <h3 class="sub-title"><a href="#">Project Lorem Ipsum</a></h3>
+                            <div class="meta">Python/AngularJS</div>
+                            <div class="action"><a href="#">View on Github &rarr;</a></div>
+                        </div><!--//content-->    
+                        <a class="link-mask" href="#"></a>              
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                
+            </div><!--//item-wrapper-->
+            
+        </section><!--//section-->
+        
+        <section id="contact-section" class="contact-section section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="intro">
+                <img class="profile-image" src="data:image/jpeg;base64,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" alt="">
+                <div class="dialog">
+                    <p>I'm currently taking on freelance work. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                    <p><strong>I can help with the following:</strong></p>
+                    <ul class="list-unstyled service-list ml-0">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> App development with ReactJS</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Front-end development with AngularJS</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Back-end development with Django/Python</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> UI development</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> UX prototyping</li>
+                    </ul>
+                    <p>Drop me a line at <a href="mailto:someone@example.com">amirhosseineghbali@gmail</a> or call me at <a href="tel:09223707126">0922370126</a></p>
+                    <ul class="social list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+                    </ul><!--//social-->
+                </div><!--//diaplog-->
+            </div><!--//intro-->
+
+        </section><!--//section-->
+        
+    </div><!--//wrapper-->
+    
+    <footer class="footer text-center">
+        <div class="container">
+            <small class="copyright">Template Copyright @ <a href="http://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+        </div><!--//container-->
+    </footer>
+    
+    
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE) ****** -->
+	<div id="config-panel" class="config-panel config-panel-hide d-none d-lg-block">
+		<div class="panel-inner">
+			<a id="config-trigger" class="config-trigger" href="#"><i class="fas fa-cog mx-auto"></i></a>
+			<h5 class="mb-3">Choose Color</h5>
+			<ul id="color-options" class="list-unstyled list-inline mb-0">
+				<li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" data-chart="#00BCD4" href="#"></a></li>
+                <li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" data-chart="#03A9F4" href="#"></a></li>
+                <li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" data-chart="#009688" href="#"></a></li>
+                <li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" data-chart="#4CAF50" href="#"></a></li>
+                <li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" data-chart="#8BC34A" href="#"></a></li>
+                <li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" data-chart="#C0CA33" href="#"></a></li>
+                <li class="theme-10  list-inline-item"><a data-style="assets/css/theme-10.css" data-chart="#795548" href="#"></a></li>
+                <li class="theme-11  list-inline-item"><a data-style="assets/css/theme-11.css" data-chart="#607D8B" href="#"></a></li>
+                <li class="theme-12  list-inline-item"><a data-style="assets/css/theme-12.css" data-chart="#673AB7" href="#"></a></li>
+                <li class="theme-13  list-inline-item"><a data-style="assets/css/theme-13.css" data-chart="#3F51B5" href="#"></a></li>
+                <li class="theme-14  list-inline-item"><a data-style="assets/css/theme-14.css" data-chart="#2196F3" href="#"></a></li>
+                <li class="theme-15  list-inline-item"><a data-style="assets/css/theme-15.css" data-chart="#9C27B0" href="#"></a></li>
+                <li class="theme-16  list-inline-item"><a data-style="assets/css/theme-16.css" data-chart="#E91E63" href="#"></a></li>
+			</ul><!--//color-options-->
+			<a id="config-close" class="close" href="#"><i class="fas fa-times-circle"></i></a>
+			
+		</div><!--//panel-inner-->
+	</div><!--//config-panel-->
+    
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    <script src="assets/plugins/easy-pie-chart/dist/easypiechart.min.js"></script>
+    <script src="assets/plugins/imagesloaded.pkgd.min.js"></script> 
+    <script src="assets/plugins/isotope.pkgd.min.js"></script>  
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="assets/plugins/vanilla-back-to-top.min.js"></script> 
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="assets/js/demo/style-switcher.js"></script>     
+    
+
+</body>
+</html> 
+
